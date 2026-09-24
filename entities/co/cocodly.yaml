@@ -49,30 +49,20 @@ offers:
               minor_units: 500000
             kind: up-to
       consideration:
-        kind: none
+        kind: variable
+        description: Commitment to use Cocodly for a shipped customer-facing or internal web experience within 90 days of approval.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The team is an incorporated or clearly structured early-stage company, typically under 20 employees.
-          - criterion_id: cri_02
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The team has an active product or validated idea with a public site, deck, or demo Cocodly can review.
-          - criterion_id: cri_03
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The team commits to use Cocodly for a shipped customer-facing or internal web experience within 90 days of approval.
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Pre-seed and seed teams that are an incorporated or clearly structured early-stage company (typically under 20 employees) with an active product or validated idea with a public site, deck, or demo Cocodly can review.
     roles:
       terms_authority_entity_id: ent_01m165q36nkfrgg02s4bmb82sf
       access_operator_entity_id: ent_01m165q36nkfrgg02s4bmb82sf
     access:
       availability: public
       method: contact
-      url: https://www.cocodly.com/programs/startups
-      instructions: Applications are reviewed by email only. Send a short blurb with your team, stage, and a link to the email address on the startup program page, with the subject Startup program application.
+      instructions: Applications are reviewed by email only. Send a short blurb (team, stage, link) by email with the subject Startup program application.
     source_ids:
       - src_7bbb89d6e20cf72b8383aaf4f997e300b0cca70955c75cb442154cd74b19c4b1
