@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-08-29T07:00:00.000Z
   category: apis-integration
 profile:
-  summary: LocationIQ provides geocoding, maps, and routing APIs for websites and apps, built on OpenStreetMap, OpenAddresses, and other data sources.
+  summary: LocationIQ provides geocoding, maps, and routing APIs for websites and apps.
   description: LocationIQ provides geocoding, autocomplete, maps, and routing APIs for developers, with US and EU datacenters.
   links:
     site: https://locationiq.com
@@ -40,7 +40,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to 50% off for the first 12 months through the LocationIQ for Startups Program.
+          description: Up to 50% off for the first 12 months.
           kind: discount
           percentage:
             basis_points: 5000
@@ -50,7 +50,7 @@ offers:
             value: P1Y
       consideration:
         kind: variable
-        description: Qualifying early stage companies can get up to 50% off LocationIQ plans for their first 12 months.
+        description: The startup receives up to 50% off for the first 12 months.
     eligibility:
       rule:
         kind: all
