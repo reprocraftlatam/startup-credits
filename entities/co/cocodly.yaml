@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-08-29T07:00:00.000Z
   category: no-code
 profile:
-  description: Cocodly is an AI platform for building and publishing websites, applications, and internal tools.
+  summary: Cocodly is an AI builder that turns a prompt into a website or app with auth, payments, and data, and lets teams export the codebase.
+  description: Cocodly is an AI platform for building web apps, mobile apps, and websites, including auth, payments, and data, with an exportable codebase.
   links:
     site: https://www.cocodly.com
     pricing: https://www.cocodly.com/pricing
@@ -24,7 +25,7 @@ programs:
     program_slug: cocodly-for-startups
     program_slug_aliases: []
     title: Cocodly for Startups
-    summary: Cocodly offers qualified pre-seed and seed teams credits toward paid plans, subject to approval and availability.
+    summary: Cocodly for startups gives qualified pre-seed and seed teams credits toward paid plans, up to the equivalent of $5,000 in platform value, subject to approval and availability.
     source_ids:
       - src_7bbb89d6e20cf72b8383aaf4f997e300b0cca70955c75cb442154cd74b19c4b1
 offers:
@@ -32,15 +33,15 @@ offers:
     program_id: prg_01m165q36n8dedav6jw8q2566n
     offer_slug: up-to-5000-in-startup-credits
     offer_slug_aliases: []
-    title: Up to $5,000 in Cocodly Startup Credits
-    summary: Qualified pre-seed and seed teams may receive credits toward Cocodly paid plans, up to the equivalent of $5,000 in platform value.
+    title: Up to $5,000 in Cocodly credits toward paid plans
+    summary: Qualified pre-seed and seed teams may receive credits toward Cocodly paid plans, up to the equivalent of $5,000 in platform value, subject to approval and availability.
     lifecycle:
       status: active
       effective_from: 2026-08-29T07:00:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Credits toward paid plans worth up to $5,000 in platform value.
+          description: Credits toward paid plans, up to the equivalent of $5,000 in platform value, subject to approval and availability.
           kind: credit
           value:
             amount:
@@ -51,10 +52,20 @@ offers:
         kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: The applicant is a qualified pre-seed or seed team approved based on its company structure, product or idea, and intended Cocodly use.
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The team is an incorporated or clearly structured early-stage company, typically under 20 employees.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The team has an active product or validated idea with a public site, deck, or demo Cocodly can review.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The team commits to use Cocodly for a shipped customer-facing or internal web experience within 90 days of approval.
     roles:
       terms_authority_entity_id: ent_01m165q36nkfrgg02s4bmb82sf
       access_operator_entity_id: ent_01m165q36nkfrgg02s4bmb82sf
@@ -62,7 +73,6 @@ offers:
       availability: public
       method: contact
       url: https://www.cocodly.com/programs/startups
-      instructions: Send the requested team, stage, and product information using the contact method on the startup program page.
-    terms_url: https://www.cocodly.com/programs/startups
+      instructions: Applications are reviewed by email only. Send a short blurb with your team, stage, and a link to the email address on the startup program page, with the subject Startup program application.
     source_ids:
       - src_7bbb89d6e20cf72b8383aaf4f997e300b0cca70955c75cb442154cd74b19c4b1
